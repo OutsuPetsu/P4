@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MahasiswaController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\QuestionController;
 
 Route::get('/pcr', function () {
     return 'Selamat Datang di Website Kampus PCR!';
@@ -32,3 +33,6 @@ Route::get('/', function () {
 
 route :: get('/mahasiswa/{param1}' , [MahasiswaController:: class, 'show']);
 route::get('/home' , [HomeController::class,'index']);
+
+Route::post('question/store', [QuestionController::class, 'store'])
+		->name('question.store');
