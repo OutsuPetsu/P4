@@ -42,7 +42,7 @@ class QuestionController extends Controller
         ]);
 
 
-    return view('home-question-respon', $data);
+    return redirect()->route('home-question-respon') -> with(",",$data);
 
     }
 
