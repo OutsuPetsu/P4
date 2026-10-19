@@ -47,3 +47,6 @@ Route::get('/home-question-respon', function () {
 Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
 Route::resource('pelanggan', PelangganController::class);
+
+Route::delete('/pelanggan/{id}', [PelangganController::class, 'destroy'])
+    ->name('pelanggan.destroy');
