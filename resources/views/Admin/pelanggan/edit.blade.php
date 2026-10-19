@@ -340,7 +340,7 @@
                                     <!-- Phone -->
                                     <div class="mb-3">
                                         <label for="phone" class="form-label">Phone</label>
-                                        <input type="text" id="phone" class="form-control" name="phone" value="{{ $dataPelanggan->email }}">
+                                        <input type="text" id="phone" class="form-control" name="phone" value="{{ $dataPelanggan->phone }}">
                                     </div>
 
                                     <!-- Buttons -->
