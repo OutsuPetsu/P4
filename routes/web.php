@@ -6,6 +6,7 @@ use App\Http\Controllers\MahasiswaController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\PelangganController;
+use App\Http\Controllers\UserController;
 
 
 Route::get('/pcr', function () {
@@ -50,3 +51,5 @@ Route::resource('pelanggan', PelangganController::class);
 
 Route::delete('/pelanggan/{id}', [PelangganController::class, 'destroy'])
     ->name('pelanggan.destroy');
+
+Route::resource('user', UserController::class);
