@@ -1,4 +1,4 @@
-@extends('layouts.admin.app')
+@extends('layouts.app')
 @section('content')
         {{-- start main content --}}
         <div class="py-4">
@@ -75,6 +75,9 @@
 
                                 </tbody>
                             </table>
+                                 <div class="mt-3">
+        {{ $dataPelanggan->links('pagination::bootstrap-5') }}
+    </div>
                         </div>
                     </div>
                 </div>
